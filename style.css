@@ -1,0 +1,172 @@
+/*
+ <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.opacity-change-link .main-img:hover{
+  opacity: 0.4;
+}
+
+.opacity-change-link:hover .wiew-img{
+  opacity: 1;
+}
+
+.opacity-change-link:hover .blueground{
+  opacity: 0.5;
+}
+
+.main-img{
+  background-color:hsl(178, 100%, 50%);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity:10;
+  transition: all 0.4s ease;
+}
+
+
+.blueground{
+  background-color:hsl(178, 100%, 50%);
+  width: 18rem;
+  height: 18rem;
+  border-radius: 20px;
+  position: absolute;
+  top: 30px;
+  margin: 0;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+
+
+.wiew-img{
+  position: absolute;
+  right: 9.5rem;
+  top: 9rem;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+
+.container{
+  width: 22rem;
+  margin: auto;
+  position: relative;
+  margin-top: 60px;
+  padding: 30px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+}
+
+.about{
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  
+}
+
+.about-link{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.about-link:hover,
+.about-link:active{
+  color: hsl(178, 100%, 50%);
+}
+
+.about-description{
+  color: hsl(215, 20%, 39%);
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 300;
+}
+.price-time{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5px; 
+
+}
+
+.price{
+  color:hsl(178, 100%, 50%);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.price-number{
+  margin-left: 4px;
+}
+
+.price-icon{
+  position: relative;
+  margin-bottom: -2px;
+}
+
+.time{
+  color:hsl(215, 20%, 39%) ;
+  font-weight: 500 ;
+}
+
+.time-left{ 
+  margin-left: 4px;
+}
+
+.time-icon{
+  position: relative;
+  margin-bottom: -3px;
+}
+
+hr{
+  height: 1px;
+  background-color:hsl(215, 20%, 39%);
+  border: none;
+  margin-top: 15px;
+}
+
+.creator-section{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.creator-title{
+  color: hsl(215, 20%, 39%);
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.creator-link{
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.creator-link:active,
+.creator-link:hover{
+  color:hsl(178, 100%, 50%) ;
+}
+
+.creator-img{
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
